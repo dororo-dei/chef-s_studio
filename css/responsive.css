@@ -1,3 +1,4 @@
+@import url(font.css);
 /* 1000 */
 @media (max-width: 1000px) {
   /* list */
@@ -12,12 +13,23 @@
   }
   .menu {
     display: none;
+    position: absolute;
+    top: 43px;
+    right: 0;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: powderblue;
+  }
+  .menu.show{
+    display: flex;
   }
   .hamburger {
     display: block;
   }
   .nav {
     justify-content: flex-end;
+    position: relative;
   }
   /* 메인 */
   .intro {
@@ -42,7 +54,7 @@
     display: block;
   }
   .card-list ul {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
   }
   .country p {
     font-size: 14px;
